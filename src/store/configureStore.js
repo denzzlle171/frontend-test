@@ -1,6 +1,7 @@
-import { createStore, applyMiddleware, compose } from 'redux'
-import { rootReducer } from '../redux'
+import { createStore, applyMiddleware, compose } from 'redux';
+import userReduser from './users.reduser';
 import thunk from 'redux-thunk'
+
 
 const composeEnhancers = (process.env.NODE_ENV !== 'production' &&
   typeof window !== 'undefined' &&
@@ -8,6 +9,15 @@ const composeEnhancers = (process.env.NODE_ENV !== 'production' &&
   compose
 
 export const store = createStore(
-  rootReducer,
-  composeEnhancers(applyMiddleware(thunk)),
-)
+  userReduser,
+  composeEnhancers(applyMiddleware(thunk))
+);
+
+export default store;
+
+
+
+
+
+
+
