@@ -1,6 +1,5 @@
 import { InputWraper, Lable, Input, Erorblock, Erortext } from './../../styles';
 
-
 const Name = ({ register, errors }) => {
   return (
     <InputWraper>

@@ -1,6 +1,6 @@
 import { InputWraper, Lable, Input, Erorblock, Erortext } from './../../styles';
 
-const Email = ({register,errors}) => {
+const Email = ({ register, errors }) => {
   return (
     <InputWraper>
       <Lable htmlFor="email">Email</Lable>
@@ -8,15 +8,13 @@ const Email = ({register,errors}) => {
         type="email"
         {...register('email', {
           required: true,
-          minLength: 4
+          minLength: 4,
         })}
         id="email"
       />
       <Erorblock>
         {errors?.addres && (
-          <Erortext>
-            {errors?.email?.message && 'field is required'}
-          </Erortext>
+          <Erortext>{errors?.email?.message && 'field is required'}</Erortext>
         )}
       </Erorblock>
     </InputWraper>

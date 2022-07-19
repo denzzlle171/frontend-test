@@ -1,6 +1,5 @@
 import { BodyTable, TabBodyItem } from '../../styles';
 
-
 const TableRow = ({ item }) => {
   return (
     <BodyTable>
@@ -13,9 +12,5 @@ const TableRow = ({ item }) => {
     </BodyTable>
   );
 };
-
-
-
-
 
 export default TableRow;

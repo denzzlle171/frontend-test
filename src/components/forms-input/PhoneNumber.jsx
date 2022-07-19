@@ -13,9 +13,7 @@ const PhoneNumber = ({ register, errors }) => {
       />
       <Erorblock>
         {errors?.number && (
-          <Erortext>
-            {errors?.number && 'field is required'}
-          </Erortext>
+          <Erortext>{errors?.number && 'field is required'}</Erortext>
         )}
       </Erorblock>
     </InputWraper>

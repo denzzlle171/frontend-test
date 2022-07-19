@@ -15,13 +15,13 @@ const UserForm = ({ addUser }) => {
     register,
     formState: { errors },
     handleSubmit,
-    reset
+    reset,
   } = useForm();
 
   const onSubmit = (data) => {
     alert(JSON.stringify(data));
     addUser(data);
-    reset()
+    reset();
   };
 
   return (
@@ -43,4 +43,4 @@ const mapDispatch = {
   addUser: allActions.addUser,
 };
 
-export default  connect(null, mapDispatch)(UserForm);
+export default connect(null, mapDispatch)(UserForm);
